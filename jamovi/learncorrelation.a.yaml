@@ -1,0 +1,67 @@
+---
+name: LearnCorrelation
+title: Correlation
+menuGroup: learnJamovi
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >-
+        Learn about Pearson and Spearman correlation to explore relationships
+        between continuous variables.
+    R:
+        dontrun: false
+        usage: |
+            library(learnJamovi)
+            LearnCorrelation(data = iris,
+                vars = c("Sepal.Length", "Sepal.Width", "Petal.Length"))
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: vars
+      title: Variables
+      type: Variables
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+      description:
+          R: a vector of strings naming the variables in `data` to correlate
+
+    - name: method
+      title: Correlation method
+      type: List
+      options:
+        - name: pearson
+          title: Pearson (parametric)
+        - name: spearman
+          title: Spearman (non-parametric)
+        - name: kendall
+          title: Kendall's τ
+      default: pearson
+      description:
+          R: >
+              the correlation method: `"pearson"` (default),
+              `"spearman"`, or `"kendall"`
+
+    - name: flagSig
+      title: Flag significant correlations
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) to mark p < .05 correlations with *'
+
+    - name: showTheory
+      title: Show statistical theory
+      type: Bool
+      default: true
+
+    - name: showInstructions
+      title: Show Jamovi instructions
+      type: Bool
+      default: true
+...

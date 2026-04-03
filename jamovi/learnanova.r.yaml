@@ -1,0 +1,100 @@
+---
+name: LearnANOVA
+title: One-Way ANOVA
+jrs: '1.1'
+
+items:
+    - name: theory
+      title: Statistical Theory
+      type: Html
+      visible: (showTheory)
+      clearWith: []
+
+    - name: instructions
+      title: Jamovi Instructions
+      type: Html
+      visible: (showInstructions)
+      clearWith: []
+
+    - name: anova
+      title: ANOVA
+      type: Table
+      clearWith:
+        - dep
+        - factor
+      columns:
+        - name: source
+          title: Source
+          type: text
+        - name: ss
+          title: Sum of Squares
+          type: number
+        - name: df
+          title: df
+          type: integer
+        - name: ms
+          title: Mean Square
+          type: number
+        - name: f
+          title: F
+          type: number
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: etaSq
+          title: η²
+          type: number
+          format: zto
+
+    - name: desc
+      title: Group Descriptives
+      type: Table
+      clearWith:
+        - dep
+        - factor
+      columns:
+        - name: group
+          title: Group
+          type: text
+        - name: n
+          title: N
+          type: integer
+        - name: mean
+          title: Mean
+          type: number
+        - name: sd
+          title: SD
+          type: number
+        - name: se
+          title: SE
+          type: number
+
+    - name: postHocTable
+      title: Post-Hoc Comparisons (Tukey HSD)
+      type: Table
+      visible: (postHoc)
+      clearWith:
+        - dep
+        - factor
+        - postHoc
+      columns:
+        - name: comparison
+          title: Comparison
+          type: text
+        - name: md
+          title: Mean diff.
+          type: number
+        - name: cilower
+          title: Lower
+          superTitle: 95% Tukey CI
+          type: number
+        - name: ciupper
+          title: Upper
+          superTitle: 95% Tukey CI
+          type: number
+        - name: pTukey
+          title: p (Tukey)
+          type: number
+          format: zto,pvalue
+...

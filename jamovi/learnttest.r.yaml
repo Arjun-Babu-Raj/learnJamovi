@@ -1,0 +1,82 @@
+---
+name: LearnTTest
+title: T-Tests
+jrs: '1.1'
+
+items:
+    - name: theory
+      title: Statistical Theory
+      type: Html
+      visible: (showTheory)
+      clearWith: []
+
+    - name: instructions
+      title: Jamovi Instructions
+      type: Html
+      visible: (showInstructions)
+      clearWith: []
+
+    - name: ttest
+      title: T-Test Results
+      type: Table
+      clearWith:
+        - dep
+        - group
+        - dep2
+        - mu
+        - hypothesis
+        - testType
+      columns:
+        - name: var
+          title: ''
+          type: text
+        - name: t
+          title: t
+          type: number
+        - name: df
+          title: df
+          type: number
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: md
+          title: Mean diff.
+          type: number
+        - name: cilower
+          title: Lower
+          superTitle: 95% CI
+          type: number
+        - name: ciupper
+          title: Upper
+          superTitle: 95% CI
+          type: number
+        - name: cohend
+          title: Cohen's d
+          type: number
+
+    - name: desc
+      title: Group Descriptives
+      type: Table
+      clearWith:
+        - dep
+        - group
+        - dep2
+        - testType
+      columns:
+        - name: group
+          title: Group
+          type: text
+        - name: n
+          title: N
+          type: integer
+        - name: mean
+          title: Mean
+          type: number
+        - name: sd
+          title: SD
+          type: number
+        - name: se
+          title: SE
+          type: number
+...

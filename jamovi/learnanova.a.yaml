@@ -1,0 +1,63 @@
+---
+name: LearnANOVA
+title: One-Way ANOVA
+menuGroup: learnJamovi
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >-
+        Learn about one-way ANOVA for comparing three or more group means,
+        including post-hoc tests and effect sizes.
+    R:
+        dontrun: false
+        usage: |
+            library(learnJamovi)
+            LearnANOVA(data = iris, dep = "Sepal.Length", factor = "Species")
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: dep
+      title: Dependent variable
+      type: Variable
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+      default:
+      description:
+          R: a string naming the dependent variable in `data`
+
+    - name: factor
+      title: Grouping factor
+      type: Variable
+      suggested:
+        - nominal
+        - ordinal
+      permitted:
+        - factor
+      default:
+      description:
+          R: a string naming the grouping variable (factor) in `data`
+
+    - name: postHoc
+      title: Post-hoc tests (Tukey HSD)
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` to compute Tukey HSD post-hoc comparisons'
+
+    - name: showTheory
+      title: Show statistical theory
+      type: Bool
+      default: true
+
+    - name: showInstructions
+      title: Show Jamovi instructions
+      type: Bool
+      default: true
+...

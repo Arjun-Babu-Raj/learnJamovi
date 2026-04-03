@@ -1,0 +1,51 @@
+---
+name: LearnCorrelation
+title: Correlation
+jrs: '1.1'
+
+items:
+    - name: theory
+      title: Statistical Theory
+      type: Html
+      visible: (showTheory)
+      clearWith: []
+
+    - name: instructions
+      title: Jamovi Instructions
+      type: Html
+      visible: (showInstructions)
+      clearWith: []
+
+    - name: matrix
+      title: Correlation Matrix
+      type: Table
+      clearWith:
+        - vars
+        - method
+        - flagSig
+      columns:
+        - name: v1
+          title: Variable 1
+          type: text
+        - name: v2
+          title: Variable 2
+          type: text
+        - name: r
+          title: r
+          type: number
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: n
+          title: N
+          type: integer
+        - name: cilower
+          title: Lower
+          superTitle: 95% CI
+          type: number
+        - name: ciupper
+          title: Upper
+          superTitle: 95% CI
+          type: number
+...

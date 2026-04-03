@@ -1,0 +1,61 @@
+---
+name: LearnDescriptive
+title: Descriptive Statistics
+jrs: '1.1'
+
+items:
+    - name: theory
+      title: Statistical Theory
+      type: Html
+      visible: (showTheory)
+      clearWith: []
+
+    - name: instructions
+      title: Jamovi Instructions
+      type: Html
+      visible: (showInstructions)
+      clearWith: []
+
+    - name: descriptives
+      title: Descriptive Statistics
+      type: Table
+      rows: (vars)
+      clearWith:
+        - vars
+        - groupVar
+      columns:
+        - name: var
+          title: Variable
+          type: text
+          content: ($key)
+        - name: n
+          title: N
+          type: integer
+        - name: mean
+          title: Mean
+          type: number
+        - name: median
+          title: Median
+          type: number
+        - name: sd
+          title: SD
+          type: number
+        - name: se
+          title: SE
+          type: number
+        - name: min
+          title: Min
+          type: number
+        - name: max
+          title: Max
+          type: number
+        - name: range
+          title: Range
+          type: number
+        - name: skew
+          title: Skewness
+          type: number
+        - name: kurt
+          title: Kurtosis
+          type: number
+...
