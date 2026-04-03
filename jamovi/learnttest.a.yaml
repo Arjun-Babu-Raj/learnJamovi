@@ -1,0 +1,109 @@
+---
+name: LearnTTest
+title: T-Tests
+menuGroup: learnJamovi
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >-
+        Learn about one-sample, independent-samples, and paired-samples
+        t-tests with step-by-step Jamovi guidance.
+    R:
+        dontrun: false
+        usage: |
+            library(learnJamovi)
+            LearnTTest(data = ToothGrowth, testType = "independent",
+                       dep = "len", group = "supp")
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: testType
+      title: Type of t-test
+      type: List
+      options:
+        - name: independent
+          title: Independent Samples
+        - name: paired
+          title: Paired Samples
+        - name: onesample
+          title: One Sample
+      default: independent
+      description:
+          R: >
+              the type of t-test: `"independent"` (default), `"paired"`,
+              or `"onesample"`
+
+    - name: dep
+      title: Dependent variable
+      type: Variable
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+      default:
+      description:
+          R: a string naming the dependent variable in `data`
+
+    - name: group
+      title: Grouping variable
+      type: Variable
+      suggested:
+        - nominal
+        - ordinal
+      permitted:
+        - factor
+      default:
+      description:
+          R: >
+              a string naming the grouping variable in `data`
+              (used for independent samples t-test)
+
+    - name: dep2
+      title: Second variable (paired)
+      type: Variable
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+      default:
+      description:
+          R: >
+              a string naming the second variable for a paired-samples
+              t-test
+
+    - name: mu
+      title: Test value (H₀ mean)
+      type: Number
+      default: 0
+      description:
+          R: >
+              the hypothesised population mean for a one-sample t-test
+              (default 0)
+
+    - name: hypothesis
+      title: Alternative hypothesis
+      type: List
+      options:
+        - name: twoTailed
+          title: Mean ≠ test value (two-tailed)
+        - name: oneGreater
+          title: Mean > test value (one-tailed)
+        - name: oneLess
+          title: Mean < test value (one-tailed)
+      default: twoTailed
+
+    - name: showTheory
+      title: Show statistical theory
+      type: Bool
+      default: true
+
+    - name: showInstructions
+      title: Show Jamovi instructions
+      type: Bool
+      default: true
+...

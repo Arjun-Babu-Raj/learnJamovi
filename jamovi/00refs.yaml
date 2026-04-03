@@ -1,0 +1,32 @@
+---
+refs:
+    R:
+        type: software
+        author: R Core Team
+        year: 2024
+        title: 'R: A Language and Environment for Statistical Computing'
+        publisher: '[Computer software]. Retrieved from https://cran.r-project.org/'
+        url: https://cran.r-project.org/
+
+    jmvcore:
+        type: software
+        author: Jonathon Love
+        year: 2024
+        title: 'jmvcore: Dependencies for the jamovi Framework'
+        publisher: CRAN
+        url: https://cran.r-project.org/package=jmvcore
+
+    Cohen1988:
+        type: book
+        author: Cohen, J.
+        year: 1988
+        title: 'Statistical Power Analysis for the Behavioral Sciences (2nd ed.)'
+        publisher: Lawrence Erlbaum Associates
+
+    Field2013:
+        type: book
+        author: Field, A.
+        year: 2013
+        title: 'Discovering Statistics Using IBM SPSS Statistics (4th ed.)'
+        publisher: Sage Publications
+...

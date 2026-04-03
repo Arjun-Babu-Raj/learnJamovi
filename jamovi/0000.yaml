@@ -1,0 +1,65 @@
+---
+title: Learn Statistics with Jamovi
+name: learnJamovi
+version: 1.0.0
+jms: '1.0'
+authors:
+  - Arjun Babu Raj
+maintainer: Arjun Babu Raj <arjunbaburaj@example.com>
+date: '2024-01-01'
+type: R
+description: >-
+  A module for learning statistics with Jamovi. Covers descriptive statistics,
+  t-tests, ANOVA, correlation, linear regression, and chi-square tests.
+  Each topic includes statistical theory, step-by-step Jamovi instructions,
+  and the ability to analyse your own data or bundled sample datasets.
+analyses:
+  - title: Descriptive Statistics
+    name: LearnDescriptive
+    ns: learnJamovi
+    menuGroup: learnJamovi
+    menuTitle: Descriptive Statistics
+    description: >-
+      Learn descriptive statistics and explore your data with measures of
+      central tendency, spread, and distribution shape.
+  - title: T-Tests
+    name: LearnTTest
+    ns: learnJamovi
+    menuGroup: learnJamovi
+    menuTitle: T-Tests
+    description: >-
+      Learn about one-sample, independent-samples, and paired-samples t-tests
+      with step-by-step guidance.
+  - title: One-Way ANOVA
+    name: LearnANOVA
+    ns: learnJamovi
+    menuGroup: learnJamovi
+    menuTitle: One-Way ANOVA
+    description: >-
+      Learn about one-way ANOVA for comparing three or more group means,
+      including post-hoc tests.
+  - title: Correlation
+    name: LearnCorrelation
+    ns: learnJamovi
+    menuGroup: learnJamovi
+    menuTitle: Correlation
+    description: >-
+      Learn about Pearson and Spearman correlation to explore relationships
+      between continuous variables.
+  - title: Linear Regression
+    name: LearnRegression
+    ns: learnJamovi
+    menuGroup: learnJamovi
+    menuTitle: Linear Regression
+    description: >-
+      Learn simple and multiple linear regression to predict outcomes from
+      one or more predictor variables.
+  - title: Chi-Square Tests
+    name: LearnChiSquare
+    ns: learnJamovi
+    menuGroup: learnJamovi
+    menuTitle: Chi-Square Tests
+    description: >-
+      Learn chi-square goodness-of-fit and test of independence for
+      categorical data analysis.
+...

@@ -1,0 +1,62 @@
+---
+name: LearnDescriptive
+title: Descriptive Statistics
+menuGroup: learnJamovi
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >-
+        Learn about descriptive statistics and explore your data. This module
+        explains measures of central tendency, spread, and distribution shape,
+        and provides step-by-step Jamovi instructions.
+    R:
+        dontrun: false
+        usage: |
+            library(learnJamovi)
+            LearnDescriptive(data = iris, vars = c("Sepal.Length", "Sepal.Width"))
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: vars
+      title: Variables
+      type: Variables
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+      description:
+          R: >
+              a vector of strings naming continuous variables in `data` to
+              summarise (optional)
+
+    - name: groupVar
+      title: Split by (optional)
+      type: Variable
+      suggested:
+        - nominal
+        - ordinal
+      permitted:
+        - factor
+      default:
+      description:
+          R: an optional grouping variable for split descriptives
+
+    - name: showTheory
+      title: Show statistical theory
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) to show the theory section'
+
+    - name: showInstructions
+      title: Show Jamovi instructions
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) to show step-by-step Jamovi instructions'
+...

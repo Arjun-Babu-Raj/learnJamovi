@@ -1,0 +1,85 @@
+---
+name: LearnRegression
+title: Linear Regression
+jrs: '1.1'
+
+items:
+    - name: theory
+      title: Statistical Theory
+      type: Html
+      visible: (showTheory)
+      clearWith: []
+
+    - name: instructions
+      title: Jamovi Instructions
+      type: Html
+      visible: (showInstructions)
+      clearWith: []
+
+    - name: modelFit
+      title: Model Fit
+      type: Table
+      clearWith:
+        - dep
+        - covs
+      columns:
+        - name: r
+          title: R
+          type: number
+        - name: r2
+          title: R²
+          type: number
+          format: zto
+        - name: r2adj
+          title: Adjusted R²
+          type: number
+          format: zto
+        - name: f
+          title: F
+          type: number
+        - name: df1
+          title: df1
+          type: integer
+        - name: df2
+          title: df2
+          type: integer
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+
+    - name: coeff
+      title: Coefficients
+      type: Table
+      clearWith:
+        - dep
+        - covs
+      columns:
+        - name: term
+          title: Predictor
+          type: text
+        - name: b
+          title: b
+          type: number
+        - name: se
+          title: SE
+          type: number
+        - name: beta
+          title: β (std.)
+          type: number
+        - name: t
+          title: t
+          type: number
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: cilower
+          title: Lower
+          superTitle: 95% CI
+          type: number
+        - name: ciupper
+          title: Upper
+          superTitle: 95% CI
+          type: number
+...

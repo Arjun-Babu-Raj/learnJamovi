@@ -1,0 +1,18 @@
+Package: learnJamovi
+Type: Package
+Title: Learn Statistics with Jamovi
+Version: 1.0.0
+Date: 2024-01-01
+Authors@R: person("Arjun", "Babu Raj", email = "arjunbaburaj@example.com",
+    role = c("aut", "cre"))
+Description: A Jamovi module for learning statistics. Includes explanations of
+    statistical principles and guided analyses for descriptive statistics, t-tests,
+    ANOVA, correlation, linear regression, and chi-square tests.
+    Users can apply each analysis to sample datasets or their own data.
+License: GPL-3
+LazyData: TRUE
+Imports:
+    jmvcore (>= 0.9.0),
+    R6
+Encoding: UTF-8
+RoxygenNote: 7.2.0

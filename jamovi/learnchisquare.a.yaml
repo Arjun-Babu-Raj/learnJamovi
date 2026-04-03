@@ -1,0 +1,58 @@
+---
+name: LearnChiSquare
+title: Chi-Square Tests
+menuGroup: learnJamovi
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >-
+        Learn chi-square goodness-of-fit and test of independence for
+        categorical data analysis.
+    R:
+        dontrun: false
+        usage: |
+            library(learnJamovi)
+            LearnChiSquare(data = as.data.frame(HairEyeColor),
+                rows = "Hair", cols = "Eye")
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: rows
+      title: Row variable
+      type: Variable
+      suggested:
+        - nominal
+        - ordinal
+      permitted:
+        - factor
+      default:
+      description:
+          R: a string naming the row (first) categorical variable in `data`
+
+    - name: cols
+      title: Column variable
+      type: Variable
+      suggested:
+        - nominal
+        - ordinal
+      permitted:
+        - factor
+      default:
+      description:
+          R: a string naming the column (second) categorical variable in `data`
+
+    - name: showTheory
+      title: Show statistical theory
+      type: Bool
+      default: true
+
+    - name: showInstructions
+      title: Show Jamovi instructions
+      type: Bool
+      default: true
+...

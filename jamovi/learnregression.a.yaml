@@ -1,0 +1,57 @@
+---
+name: LearnRegression
+title: Linear Regression
+menuGroup: learnJamovi
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: >-
+        Learn simple and multiple linear regression to predict a continuous
+        outcome from one or more predictor variables.
+    R:
+        dontrun: false
+        usage: |
+            library(learnJamovi)
+            LearnRegression(data = mtcars, dep = "mpg",
+                covs = c("hp", "wt", "cyl"))
+
+options:
+    - name: data
+      type: Data
+      description:
+          R: the data as a data frame
+
+    - name: dep
+      title: Outcome (dependent) variable
+      type: Variable
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+      default:
+      description:
+          R: a string naming the dependent variable in `data`
+
+    - name: covs
+      title: Predictor(s)
+      type: Variables
+      suggested:
+        - continuous
+      permitted:
+        - numeric
+        - factor
+      default:
+      description:
+          R: a vector of strings naming the predictor variables in `data`
+
+    - name: showTheory
+      title: Show statistical theory
+      type: Bool
+      default: true
+
+    - name: showInstructions
+      title: Show Jamovi instructions
+      type: Bool
+      default: true
+...

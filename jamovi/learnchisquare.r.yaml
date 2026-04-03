@@ -1,0 +1,57 @@
+---
+name: LearnChiSquare
+title: Chi-Square Tests
+jrs: '1.1'
+
+items:
+    - name: theory
+      title: Statistical Theory
+      type: Html
+      visible: (showTheory)
+      clearWith: []
+
+    - name: instructions
+      title: Jamovi Instructions
+      type: Html
+      visible: (showInstructions)
+      clearWith: []
+
+    - name: chiSq
+      title: Chi-Square Test of Independence
+      type: Table
+      clearWith:
+        - rows
+        - cols
+      columns:
+        - name: test
+          title: Test
+          type: text
+        - name: value
+          title: χ²
+          type: number
+        - name: df
+          title: df
+          type: integer
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: cramersV
+          title: Cramér's V
+          type: number
+          format: zto
+
+    - name: freq
+      title: Observed Counts
+      type: Table
+      clearWith:
+        - rows
+        - cols
+      columns:
+        - name: rowLabel
+          title: ''
+          type: text
+        - name: counts
+          title: Counts
+          type: text
+...
