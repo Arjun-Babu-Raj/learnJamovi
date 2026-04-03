@@ -226,7 +226,7 @@ If the CI does not include 0, the difference is statistically significant (p &lt
 
 <h3 style="color:#2c7bb6;">Step 1 – Load your data</h3>
 <p>Open your dataset via <strong>File → Open</strong>. To use a sample dataset:
-<strong>File → Open</strong> and select one of the sample CSV files from the module's <code>data/</code> folder.</p>
+<strong>File → Open</strong> and select one of the sample CSV files from the module\'s <code>data/</code> folder.</p>
 
 <h3 style="color:#2c7bb6;">Step 2 – Open this analysis</h3>
 <p>Click <strong>learnJamovi → T-Tests</strong>, then select

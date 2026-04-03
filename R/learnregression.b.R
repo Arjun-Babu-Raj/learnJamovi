@@ -143,7 +143,7 @@ predictor is useful.</p>
 
 <h3 style="color:#2c7bb6;">Step 1 – Load your data</h3>
 <p>Open your dataset via <strong>File → Open</strong>. For a sample dataset:
-<strong>File → Open</strong> and select one of the sample CSV files from the module's <code>data/</code> folder. Open <em>academic</em> (predict math_score from study_hours and attendance).</p>
+<strong>File → Open</strong> and select one of the sample CSV files from the module\'s <code>data/</code> folder. Open <em>academic</em> (predict math_score from study_hours and attendance).</p>
 
 <h3 style="color:#2c7bb6;">Step 2 – Open this analysis</h3>
 <p>Click <strong>learnJamovi → Linear Regression</strong>.</p>

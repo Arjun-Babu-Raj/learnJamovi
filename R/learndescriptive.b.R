@@ -114,7 +114,7 @@ They give you a quick overview of your data before running inferential tests.</p
 
 <h3 style="color:#2c7bb6;">Sample Datasets Available</h3>
 <p>This module includes three sample datasets you can open from
-<strong>File → Open</strong> → select a CSV from the module's <code>data/</code> folder:</p>
+<strong>File → Open</strong> → select a CSV from the module\'s <code>data/</code> folder:</p>
 <ul>
   <li><strong>survey</strong> – Survey data with age, gender, education, income, satisfaction, and anxiety scores</li>
   <li><strong>academic</strong> – Student scores, study hours, attendance, and grade</li>
@@ -132,7 +132,7 @@ They give you a quick overview of your data before running inferential tests.</p
 <h3 style="color:#2c7bb6;">Step 1 – Load your data</h3>
 <p>Open Jamovi and load your dataset via <strong>File → Open</strong>. You can open
 CSV, Excel, SPSS, or Jamovi (.omv) files. To use one of the bundled sample
-datasets, choose <strong>File → Open</strong> and select one of the sample CSV files from the module's <code>data/</code> folder.</p>
+datasets, choose <strong>File → Open</strong> and select one of the sample CSV files from the module\'s <code>data/</code> folder.</p>
 
 <h3 style="color:#2c7bb6;">Step 2 – Open this analysis</h3>
 <p>Click <strong>learnJamovi → Descriptive Statistics</strong> in the menu bar.</p>
