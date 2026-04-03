@@ -131,7 +131,7 @@ drives both. Always think critically about possible causal mechanisms.</p>
 
 <h3 style="color:#2c7bb6;">Step 1 – Load your data</h3>
 <p>Open your dataset via <strong>File → Open</strong>. For a sample dataset:
-<strong>File → Open</strong> and select one of the sample CSV files from the module's <code>data/</code> folder. Open <em>academic</em> (math_score, reading_score, writing_score, study_hours).</p>
+<strong>File → Open</strong> and select one of the sample CSV files from the module\'s <code>data/</code> folder. Open <em>academic</em> (math_score, reading_score, writing_score, study_hours).</p>
 
 <h3 style="color:#2c7bb6;">Step 2 – Open this analysis</h3>
 <p>Click <strong>learnJamovi → Correlation</strong>.</p>

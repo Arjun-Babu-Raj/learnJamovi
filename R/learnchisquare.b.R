@@ -124,7 +124,7 @@ charts can be produced from <strong>Exploration → Descriptives → Plots</stro
 
 <h3 style="color:#2c7bb6;">Step 1 – Load your data</h3>
 <p>Open your dataset via <strong>File → Open</strong>. For a sample dataset:
-<strong>File → Open</strong> and select one of the sample CSV files from the module's <code>data/</code> folder. Open <em>survey</em> (test whether gender and education are associated) or
+<strong>File → Open</strong> and select one of the sample CSV files from the module\'s <code>data/</code> folder. Open <em>survey</em> (test whether gender and education are associated) or
 <em>clinical</em> (test whether treatment group and outcome are associated).</p>
 
 <h3 style="color:#2c7bb6;">Step 2 – Check data format</h3>
